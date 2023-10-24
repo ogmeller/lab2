@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+  setlocale(0, "");
+  string schedule[7] = {"Понедельник: учеба", "Вторник: учеба", "Среда: учеба", "Четверг: учеба", "Пятница: учеба", "Суббота: дота", "Воскресенье: дота"};
+
+  int day;
+
+  cout << "Введите порядковый номер дня недели: ";
+  cin >> day;
+
+  cout << schedule[day - 1] << endl;
+
+  return 0;
+}

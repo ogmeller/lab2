@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+  setlocale(0, "");
+  string schedule[5] = {"большой палец", "указательный палец", "средний палец", "безымянный палец", "мизинец"};
+
+  int finger;
+
+  cout << "Введите порядковый номер пальца (слева на право на правой руке и справа на лево на левой руке): ";
+  cin >> finger;
+
+  cout << schedule[finger - 1] << endl;
+
+  return 0;
+}

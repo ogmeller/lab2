@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  setlocale(0,"");
+  int a, b, answer;
+
+
+  cout << "Введите два числа: ";
+  cin >> a;
+  cin >> b;
+  int correct = a * b;
+
+  cout << "Какое число получится, если умножить " << a << " на " << b << "? ";
+
+
+  cin >> answer;
+
+  if (answer == correct) {
+
+    cout << "Правильно! Ответ: " << correct << endl;
+  } else {
+    cout << "Неправильно! Правильный ответ: " << correct << endl;
+  }
+
+  return 0;
+}
